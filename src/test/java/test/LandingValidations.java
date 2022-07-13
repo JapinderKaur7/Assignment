@@ -9,15 +9,17 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
+@Test (priority = 1)
 public class LandingValidations extends Launch{
 	
 	WebDriver driver;
-  @Test
+ 
  @BeforeClass
  
  public void beforeClass() {
 	  driver=DriverManager.getDriver();
   }
+ @Test 
   public void validateTitle()
   {
 	  String expectedTitle="Amazon.ca: Low Prices – Fast Shipping – Millions of Items";
@@ -35,10 +37,6 @@ public class LandingValidations extends Launch{
 	  
 	  Assert.assertTrue(expectedUrl.equalsIgnoreCase(actualUrl), "This is not the actual Url");
 	  
-  }
-
-  @AfterClass
-  public void afterClass() {
   }
 
 }

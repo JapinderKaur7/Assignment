@@ -37,11 +37,10 @@ public class Commonmethods {
 		
 		
 	}
-	public void jsClick(WebElement ele )  {
+	public void Click(WebElement ele )  {
 		
 		JavascriptExecutor jsexe= (JavascriptExecutor)driver;
-		
-		jsexe.executeScript("arguments[0].click();",ele);
+		jsexe.executeScript("arguments[0].click();", ele);
 		
 	}
 

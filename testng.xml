@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<!-- <parameter name="validemail" value="abc@gmail.com"></parameter>
+
+<parameter name="validemail" value="abc@gmail.com"></parameter>
 <parameter name="validpassword" value="test@123"></parameter>
 <parameter name="Invalidemail" value="vbc@gmail.com"></parameter>
 <parameter name="validpassword" value="test@123"></parameter>
@@ -9,11 +10,13 @@
 <parameter name="Invalidpassword" value="vbc@gmail.com"></parameter>
 <parameter name="Invalidemail" value="hdjdhjd@gmail.com"></parameter>
 <parameter name="Invalidpassword" value="fdhdhj"></parameter>
-   -->
-  <test thread-count="5" name="Test">
+
+  <test name="Test">
     <classes>
      
-      <class name="test.LandingValidations"/>
+      <class name="test.ValidateAccntsAndLists"/>
+      <class name="test.ValidateCreateWishList"/>
+      <class name="test.NewReleaseValidation"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

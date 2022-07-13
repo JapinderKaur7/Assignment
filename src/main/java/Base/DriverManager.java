@@ -14,7 +14,7 @@ public class DriverManager {
 		String path= System.getProperty("user.dir");
 		if (browser.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",path+"\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",path+"\\Driver\\chromedriver.exe");
 			driver= new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("edge"))

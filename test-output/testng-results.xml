@@ -1,37 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="17" passed="6" failed="3" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-04T02:29:40 GMT-04:00" name="Default suite" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="193">
+  <suite started-at="2022-07-13T14:23:18 GMT-04:00" name="Suite" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="229">
     <groups>
     </groups>
-    <test started-at="2022-07-04T02:29:40 GMT-04:00" name="Default test" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="193">
-      <class name="test.ValidateNavigation">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:33 GMT-04:00" name="beforeSuite" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="6764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:40 GMT-04:00" name="beforeClass" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="27" status="PASS">
+    <test started-at="2022-07-13T14:23:18 GMT-04:00" name="Test" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="229">
+      <class name="test.ValidateLogin">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:40 GMT-04:00" name="f" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="6" status="PASS">
+        <test-method signature="ValidSignIn()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidSignIn" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
+at pom.LoginAction.SignIn(LoginAction.java:44)
+at test.ValidateLogin.ValidSignIn(ValidateLogin.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidSignIn -->
+        <test-method signature="f()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method signature="getText()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:40 GMT-04:00" name="getText" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="109" status="PASS">
+        <test-method signature="validLogin(java.lang.String)[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validLogin" finished-at="2022-07-13T14:23:19 GMT-04:00" depends-on-methods="test.ValidateLogin.ValidSignIn" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test.ValidateLogin.validLogin() on instance test.ValidateLogin@6b927fb depends on not successfully finished methods 
+[test.ValidateLogin.ValidSignIn() on instance test.ValidateLogin@6b927fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test.ValidateLogin.validLogin() on instance test.ValidateLogin@6b927fb depends on not successfully finished methods 
+[test.ValidateLogin.ValidSignIn() on instance test.ValidateLogin@6b927fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getText -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:40 GMT-04:00" name="afterClass" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="1" status="PASS">
+        </test-method> <!-- validLogin -->
+      </class> <!-- test.ValidateLogin -->
+      <class name="test.LandingValidations">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:15 GMT-04:00" name="beforeSuite" finished-at="2022-07-13T14:23:18 GMT-04:00" duration-ms="3690" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.ValidateNavigation@5fdcaa40]" started-at="2022-07-04T02:29:40 GMT-04:00" name="afterSuite" finished-at="2022-07-04T02:29:40 GMT-04:00" duration-ms="0" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="validateTitle()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validateTitle" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method signature="validateUrl()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validateUrl" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUrl -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="afterSuite" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test.ValidateNavigation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.LandingValidations -->
+      <class name="test.ValidateAcctnsAndLists">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:18 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ValidateAccountsAndLists()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidateAccountsAndLists" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at test.ValidateAcctnsAndLists.ValidateAccountsAndLists(ValidateAcctnsAndLists.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAccountsAndLists -->
+        <test-method signature="ValidationCreateWishList()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidationCreateWishList" finished-at="2022-07-13T14:23:19 GMT-04:00" depends-on-methods="test.ValidateAcctnsAndLists.ValidateAccountsAndLists" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test.ValidateAcctnsAndLists.ValidationCreateWishList() on instance test.ValidateAcctnsAndLists@3e58a80e depends on not successfully finished methods 
+[test.ValidateAcctnsAndLists.ValidateAccountsAndLists() on instance test.ValidateAcctnsAndLists@3e58a80e]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test.ValidateAcctnsAndLists.ValidationCreateWishList() on instance test.ValidateAcctnsAndLists@3e58a80e depends on not successfully finished methods 
+[test.ValidateAcctnsAndLists.ValidateAccountsAndLists() on instance test.ValidateAcctnsAndLists@3e58a80e]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidationCreateWishList -->
+        <test-method signature="f()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- test.ValidateAcctnsAndLists -->
+      <class name="test.NewReleaseValidation">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="ValidateNewReleases()[pri:4, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidateNewReleases" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at test.NewReleaseValidation.ValidateNewReleases(NewReleaseValidation.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNewReleases -->
+      </class> <!-- test.NewReleaseValidation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
