@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Invalidpassword" value="fdhdhj"/>
+  <parameter name="validpassword" value="test@123"/>
   <parameter name="validemail" value="abc@gmail.com"/>
+  <parameter name="Invalidemail" value="hdjdhjd@gmail.com"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.ValidateAcctnsAndLists">
+      <class name="test.ValidateMobileSearch">
         <methods>
-          <include name="ValidationCreateWishList"/>
-          <include name="afterSuite"/>
-          <include name="ValidateAccountsAndLists"/>
-          <include name="beforeSuite"/>
           <include name="beforeClass"/>
-        </methods>
-      </class> <!-- test.ValidateAcctnsAndLists -->
-      <class name="test.NewReleaseValidation">
-        <methods>
-          <include name="ValidateNewReleases"/>
+          <include name="ValidateMobileSearchPage"/>
+          <include name="AddToCartValidation"/>
+          <include name="ValidationMobileSearch"/>
+          <include name="ValidateDeliveryLocation"/>
           <include name="afterSuite"/>
-          <include name="beforeClass"/>
+          <include name="ValidateMobilePrice"/>
           <include name="beforeSuite"/>
+          <include name="SelectMobile"/>
         </methods>
-      </class> <!-- test.NewReleaseValidation -->
-      <class name="test.ValidateLogin">
-        <methods>
-          <include name="validLogin"/>
-          <include name="ValidSignIn"/>
-          <include name="beforeClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- test.ValidateLogin -->
+      </class> <!-- test.ValidateMobileSearch -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

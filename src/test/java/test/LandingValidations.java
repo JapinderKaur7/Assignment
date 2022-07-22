@@ -9,16 +9,16 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-@Test (priority = 1)
+
 public class LandingValidations extends Launch{
 	
-	WebDriver driver;
+	//WebDriver driver;
  
- @BeforeClass
- 
- public void beforeClass() {
-	  driver=DriverManager.getDriver();
-  }
+	/*
+	 * @BeforeClass
+	 * 
+	 * public void beforeClass() { driver=DriverManager.getDriver(); }
+	 */
  @Test 
   public void validateTitle()
   {

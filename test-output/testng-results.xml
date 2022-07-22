@@ -1,143 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="17" passed="6" failed="3" skipped="2">
+<testng-results ignored="8" total="21" passed="10" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-13T14:23:18 GMT-04:00" name="Suite" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="229">
+  <suite started-at="2022-07-22T10:56:57 EDT" name="Suite" finished-at="2022-07-22T10:57:30 EDT" duration-ms="32655">
     <groups>
+      <group name="Regression">
+        <method signature="ValidateMobileSearch.ValidationMobileSearch()[pri:0, instance:test.ValidateMobileSearch@158da8e]" name="ValidationMobileSearch" class="test.ValidateMobileSearch"/>
+        <method signature="ValidateMobileSearch.ValidateMobilePrice()[pri:0, instance:test.ValidateMobileSearch@158da8e]" name="ValidateMobilePrice" class="test.ValidateMobileSearch"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-07-13T14:23:18 GMT-04:00" name="Test" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="229">
+    <test started-at="2022-07-22T10:56:57 EDT" name="Test" finished-at="2022-07-22T10:57:30 EDT" duration-ms="32655">
       <class name="test.ValidateLogin">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateLogin@6aba2b86]" started-at="2022-07-22T10:56:58 EDT" name="beforeClass" finished-at="2022-07-22T10:56:58 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="ValidSignIn()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidSignIn" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
-at pom.LoginAction.SignIn(LoginAction.java:44)
-at test.ValidateLogin.ValidSignIn(ValidateLogin.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="ValidSignIn()[pri:0, instance:test.ValidateLogin@6aba2b86]" started-at="2022-07-22T10:56:58 EDT" name="ValidSignIn" finished-at="2022-07-22T10:56:59 EDT" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidSignIn -->
-        <test-method signature="f()[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="validLogin(java.lang.String)[pri:0, instance:test.ValidateLogin@6b927fb]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validLogin" finished-at="2022-07-13T14:23:19 GMT-04:00" depends-on-methods="test.ValidateLogin.ValidSignIn" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.ValidateLogin.validLogin() on instance test.ValidateLogin@6b927fb depends on not successfully finished methods 
-[test.ValidateLogin.ValidSignIn() on instance test.ValidateLogin@6b927fb]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.ValidateLogin.validLogin() on instance test.ValidateLogin@6b927fb depends on not successfully finished methods 
-[test.ValidateLogin.ValidSignIn() on instance test.ValidateLogin@6b927fb]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="validLogin(java.lang.String)[pri:0, instance:test.ValidateLogin@6aba2b86]" started-at="2022-07-22T10:56:59 EDT" name="validLogin" finished-at="2022-07-22T10:57:05 EDT" depends-on-methods="test.ValidateLogin.ValidSignIn" duration-ms="6000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
       </class> <!-- test.ValidateLogin -->
       <class name="test.LandingValidations">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:15 GMT-04:00" name="beforeSuite" finished-at="2022-07-13T14:23:18 GMT-04:00" duration-ms="3690" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.LandingValidations@1a451d4d]" started-at="2022-07-22T10:56:50 EDT" name="beforeSuite" finished-at="2022-07-22T10:56:57 EDT" duration-ms="7370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="validateTitle()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validateTitle" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="56" status="PASS">
+        <test-method signature="validateTitle()[pri:0, instance:test.LandingValidations@1a451d4d]" started-at="2022-07-22T10:56:58 EDT" name="validateTitle" finished-at="2022-07-22T10:56:58 EDT" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method signature="validateUrl()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="validateUrl" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="17" status="PASS">
+        <test-method signature="validateUrl()[pri:0, instance:test.LandingValidations@1a451d4d]" started-at="2022-07-22T10:56:58 EDT" name="validateUrl" finished-at="2022-07-22T10:56:58 EDT" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUrl -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.LandingValidations@694abbdc]" started-at="2022-07-13T14:23:19 GMT-04:00" name="afterSuite" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.LandingValidations@1a451d4d]" started-at="2022-07-22T10:57:30 EDT" name="afterSuite" finished-at="2022-07-22T10:57:31 EDT" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- test.LandingValidations -->
-      <class name="test.ValidateAcctnsAndLists">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:18 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="39" status="PASS">
+      <class name="test.ValidateMobileSearch">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:05 EDT" name="beforeClass" finished-at="2022-07-22T10:57:06 EDT" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="ValidateAccountsAndLists()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidateAccountsAndLists" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="ValidationMobileSearch()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:06 EDT" name="ValidationMobileSearch" finished-at="2022-07-22T10:57:09 EDT" duration-ms="3276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidationMobileSearch -->
+        <test-method signature="ValidateMobileSearchPage()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:09 EDT" name="ValidateMobileSearchPage" finished-at="2022-07-22T10:57:12 EDT" depends-on-methods="test.ValidateMobileSearch.ValidationMobileSearch" duration-ms="3128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMobileSearchPage -->
+        <test-method signature="SelectMobile()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:12 EDT" name="SelectMobile" finished-at="2022-07-22T10:57:17 EDT" depends-on-methods="test.ValidateMobileSearch.ValidateMobileSearchPage" duration-ms="5062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectMobile -->
+        <test-method signature="ValidateMobilePrice()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:17 EDT" name="ValidateMobilePrice" finished-at="2022-07-22T10:57:22 EDT" depends-on-methods="test.ValidateMobileSearch.SelectMobile" duration-ms="5169" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'$314.96')])[1]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BIMWIZE3', ip: '169.254.247.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51364}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab4a9d486fbd4a44c86ebce8ea52e5ee
+*** Element info: {Using=xpath, value=(//span[contains(text(),'$314.96')])[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'$314.96')])[1]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BIMWIZE3', ip: '169.254.247.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51364}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab4a9d486fbd4a44c86ebce8ea52e5ee
+*** Element info: {Using=xpath, value=(//span[contains(text(),'$314.96')])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-at test.ValidateAcctnsAndLists.ValidateAccountsAndLists(ValidateAcctnsAndLists.java:23)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at test.ValidateMobileSearch.ValidateMobilePrice(ValidateMobileSearch.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -164,19 +138,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateAccountsAndLists -->
-        <test-method signature="ValidationCreateWishList()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidationCreateWishList" finished-at="2022-07-13T14:23:19 GMT-04:00" depends-on-methods="test.ValidateAcctnsAndLists.ValidateAccountsAndLists" duration-ms="0" status="SKIP">
+        </test-method> <!-- ValidateMobilePrice -->
+        <test-method signature="ValidateDeliveryLocation()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:22 EDT" name="ValidateDeliveryLocation" finished-at="2022-07-22T10:57:22 EDT" depends-on-methods="test.ValidateMobileSearch.ValidateMobilePrice" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method test.ValidateAcctnsAndLists.ValidationCreateWishList() on instance test.ValidateAcctnsAndLists@3e58a80e depends on not successfully finished methods 
-[test.ValidateAcctnsAndLists.ValidateAccountsAndLists() on instance test.ValidateAcctnsAndLists@3e58a80e]]]>
+              <![CDATA[Method test.ValidateMobileSearch.ValidateDeliveryLocation() on instance test.ValidateMobileSearch@158da8e depends on not successfully finished methods 
+[test.ValidateMobileSearch.ValidateMobilePrice() on instance test.ValidateMobileSearch@158da8e]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.ValidateAcctnsAndLists.ValidationCreateWishList() on instance test.ValidateAcctnsAndLists@3e58a80e depends on not successfully finished methods 
-[test.ValidateAcctnsAndLists.ValidateAccountsAndLists() on instance test.ValidateAcctnsAndLists@3e58a80e]
+              <![CDATA[java.lang.Throwable: Method test.ValidateMobileSearch.ValidateDeliveryLocation() on instance test.ValidateMobileSearch@158da8e depends on not successfully finished methods 
+[test.ValidateMobileSearch.ValidateMobilePrice() on instance test.ValidateMobileSearch@158da8e]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -201,42 +175,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidationCreateWishList -->
-        <test-method signature="f()[pri:0, instance:test.ValidateAcctnsAndLists@3e58a80e]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- test.ValidateAcctnsAndLists -->
-      <class name="test.NewReleaseValidation">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="beforeClass" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="f" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="ValidateNewReleases()[pri:4, instance:test.NewReleaseValidation@4fb61f4a]" started-at="2022-07-13T14:23:19 GMT-04:00" name="ValidateNewReleases" finished-at="2022-07-13T14:23:19 GMT-04:00" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- ValidateDeliveryLocation -->
+        <test-method signature="AddToCartValidation()[pri:0, instance:test.ValidateMobileSearch@158da8e]" started-at="2022-07-22T10:57:22 EDT" name="AddToCartValidation" finished-at="2022-07-22T10:57:22 EDT" depends-on-methods="test.ValidateMobileSearch.ValidateDeliveryLocation" duration-ms="3" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Method test.ValidateMobileSearch.AddToCartValidation() on instance test.ValidateMobileSearch@158da8e depends on not successfully finished methods 
+[test.ValidateMobileSearch.ValidateDeliveryLocation() on instance test.ValidateMobileSearch@158da8e]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-at test.NewReleaseValidation.ValidateNewReleases(NewReleaseValidation.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+              <![CDATA[java.lang.Throwable: Method test.ValidateMobileSearch.AddToCartValidation() on instance test.ValidateMobileSearch@158da8e depends on not successfully finished methods 
+[test.ValidateMobileSearch.ValidateDeliveryLocation() on instance test.ValidateMobileSearch@158da8e]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -257,7 +206,31 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartValidation -->
+      </class> <!-- test.ValidateMobileSearch -->
+      <class name="test.ValidateAcctnsAndLists">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.ValidateAcctnsAndLists@74e52303]" started-at="2022-07-22T10:56:57 EDT" name="beforeClass" finished-at="2022-07-22T10:56:57 EDT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ValidateAccountsAndLists()[pri:0, instance:test.ValidateAcctnsAndLists@74e52303]" started-at="2022-07-22T10:57:22 EDT" name="ValidateAccountsAndLists" finished-at="2022-07-22T10:57:23 EDT" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAccountsAndLists -->
+        <test-method signature="ValidationCreateWishList()[pri:0, instance:test.ValidateAcctnsAndLists@74e52303]" started-at="2022-07-22T10:57:23 EDT" name="ValidationCreateWishList" finished-at="2022-07-22T10:57:26 EDT" depends-on-methods="test.ValidateAcctnsAndLists.ValidateAccountsAndLists" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidationCreateWishList -->
+      </class> <!-- test.ValidateAcctnsAndLists -->
+      <class name="test.NewReleaseValidation">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.NewReleaseValidation@47af7f3d]" started-at="2022-07-22T10:57:26 EDT" name="beforeClass" finished-at="2022-07-22T10:57:26 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ValidateNewReleases()[pri:4, instance:test.NewReleaseValidation@47af7f3d]" started-at="2022-07-22T10:57:26 EDT" name="ValidateNewReleases" finished-at="2022-07-22T10:57:30 EDT" duration-ms="4033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateNewReleases -->

@@ -1,29 +1,25 @@
 package test;
 
-import org.testng.annotations.Test;
-
-import Base.DriverManager;
-import utilities.readPropertyFile;
-
-import org.testng.annotations.BeforeSuite;
-
 import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+import Base.DriverManager;
+import utilities.readPropertyFile;
 
 public class Launch {
-	WebDriver driver;
+	static WebDriver driver;
 	DriverManager dm= new DriverManager();
 	readPropertyFile file;
 	Properties prop;
 	
 
 	
-  @Test
-  public void f() {
-  }
+
   @BeforeSuite
   public void beforeSuite() throws IOException {
 	  file=new readPropertyFile();
@@ -35,7 +31,7 @@ public class Launch {
 
   @AfterSuite
   public void afterSuite() {
-	 // dm.teardown();
+	  dm.teardown();
   }
 
 }

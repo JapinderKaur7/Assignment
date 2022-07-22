@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-@Test (priority = 2)
+
 public class ValidateLogin extends Launch{
 	LoginAction login;
 	NavigateActions actns;
@@ -25,15 +25,20 @@ public class ValidateLogin extends Launch{
 
   }
   
-  
+  @Parameters({"validemail"})
  @Test (dependsOnMethods = {"ValidSignIn"})
-@Parameters({"validemail"})
-
   public void validLogin(String emailSend)
   {
 	//  Assert.assertTrue(login.continuebutton.isEnabled(), "Sign In is not enabled");
 	  login.SendEmail(emailSend);
-	  driver.navigate().back();
+	  driver.get("https://www.amazon.ca/");
+	 // driver.navigate().back();
+	  try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
   }
 
 

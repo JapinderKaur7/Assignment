@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 
 
-@Test(priority =3)
 public class ValidateAcctnsAndLists extends Launch{
 	NavigateActions accnts;
 	

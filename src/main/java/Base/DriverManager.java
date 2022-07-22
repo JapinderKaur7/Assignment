@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class DriverManager {
-	public static WebDriver driver;
+	private static WebDriver driver;
 	
 	public void setup(String browser, String url)
 	{
@@ -43,15 +43,15 @@ public class DriverManager {
 	driver.manage().window().maximize();    //Manage browser properties   .maximize () will maximize the size of windows
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);   //request to script to not do any action and wait for max 5 seconds until the HTML is loaded
 }
-public static WebDriver getDriver()    //synchronise the drivers at one place. Need not to call Webdriver driver all the time.
-{
-	return driver;
-}
+
 
 public void teardown() {
 	driver.quit();
 }
 	
-	
+public static WebDriver getDriver()    //synchronise the drivers at one place. Need not to call Webdriver driver all the time.
+{
+	return driver;
+}
 
 }

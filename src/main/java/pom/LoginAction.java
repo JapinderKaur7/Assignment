@@ -7,12 +7,14 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Base.DriverManager;
 import utilities.Commonmethods;
 
 public class LoginAction {
 
-WebDriver driver;
-Commonmethods common= new Commonmethods(driver);	
+private WebDriver driver;
+Commonmethods common= new Commonmethods(DriverManager.getDriver());	
+
 
 public LoginAction(WebDriver driver)
 {
@@ -41,6 +43,7 @@ public WebElement continuebutton;
 
 public void SignIn() throws InterruptedException
 {
+
 	Actions act= new Actions(driver);
 	act.moveToElement(AccountsList).build().perform();
 	signIn.click();

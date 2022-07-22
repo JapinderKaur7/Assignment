@@ -10,7 +10,7 @@ public class readPropertyFile {
 	public Properties readPropfile() throws IOException {
 		prop= new Properties();
 		//FileInputStream file= new FileInputStream("C:\\Automation\\Workspace\\Amazon\\config.properties");
-		FileInputStream file= new FileInputStream("C:\\Automation\\Workspace\\AmazonAssignment\\AmazonAssignment\\config.properties");
+		FileInputStream file= new FileInputStream("C:\\Automation\\Workspace\\Assignment\\config.properties");
 		prop.load(file);
 
 		return prop;

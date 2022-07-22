@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Commonmethods;
 
 public class SearchForMobile{
-	WebDriver driver;
+	private WebDriver driver;
 	Commonmethods common= new Commonmethods(driver);
 	
 	public SearchForMobile(WebDriver driver)

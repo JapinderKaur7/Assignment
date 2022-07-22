@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 
 
-@Test(priority = 4)
+
 public class NewReleaseValidation extends Launch {
 	NavigateActions actions;
  
